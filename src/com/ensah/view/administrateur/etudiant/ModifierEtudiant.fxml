@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="modifierEtudiantPane"
+	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.ensah.controller.administrateur.etudiant.ModifierEtudiantController">
+	<children>
+		<BorderPane layoutX="63.0" layoutY="42.0"
+			prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<top>
+				<Pane prefHeight="66.0" prefWidth="900.0"
+					BorderPane.alignment="CENTER">
+					<children>
+						<Label layoutX="407.0" layoutY="25.0"
+							text="modifier Etudiant" />
+					</children>
+				</Pane>
+			</top>
+			<center>
+				<VBox prefHeight="200.0" prefWidth="100.0"
+					BorderPane.alignment="CENTER">
+					<children>
+						<Pane prefHeight="75.0" prefWidth="900.0">
+							<children>
+								<Label layoutX="186.0" layoutY="52.0"
+									text="CNE Etudiant :" />
+								<TextField fx:id="cneEtudiantField" layoutX="479.0"
+									layoutY="48.0" prefHeight="25.0" prefWidth="215.0"
+									promptText="CNE Etudiant" />
+							</children>
+						</Pane>
+						<Pane prefHeight="75.0" prefWidth="900.0">
+							<children>
+								<Label layoutX="186.0" layoutY="52.0"
+									text="CIN Etudiant :" />
+								<TextField fx:id="cinEtudiantField" layoutX="479.0"
+									layoutY="48.0" prefHeight="25.0" prefWidth="215.0"
+									promptText="CIN Etudiant" />
+							</children>
+						</Pane>
+						<Pane prefHeight="75.0" prefWidth="900.0">
+							<children>
+								<Label layoutX="186.0" layoutY="52.0"
+									text="Nom Etudiant :" />
+								<TextField fx:id="nomEtudiantField" layoutX="479.0"
+									layoutY="48.0" prefHeight="25.0" prefWidth="215.0"
+									promptText="Nom Etudiant" />
+							</children>
+						</Pane>
+						<Pane prefHeight="75.0" prefWidth="900.0">
+							<children>
+								<Label layoutX="186.0" layoutY="52.0"
+									text="Prenom Etudiant :" />
+								<TextField fx:id="prenomEtudiantField" layoutX="479.0"
+									layoutY="48.0" prefHeight="25.0" prefWidth="215.0"
+									promptText="Prenom Etudiant" />
+							</children>
+						</Pane>
+						<Pane prefHeight="150.0" prefWidth="900.0">
+							<children>
+								<Label layoutX="187.0" layoutY="56.0"
+									text="Classe Etudiant" />
+								<ComboBox fx:id="classeList" layoutX="477.0"
+									layoutY="52.0" prefHeight="25.0" prefWidth="215.0"
+									promptText="Classe" />
+
+							</children>
+						</Pane>
+						<Pane prefHeight="150.0" prefWidth="900.0">
+							<children>
+								<Button fx:id="modifierEtudiantBtn" layoutX="398.0"
+									layoutY="57.0" mnemonicParsing="false"
+									onAction="#modifierEtudiant" prefHeight="25.0"
+									prefWidth="113.0" text="modifier" />
+							</children>
+						</Pane>
+					</children>
+				</VBox>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>

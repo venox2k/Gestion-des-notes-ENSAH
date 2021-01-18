@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ajouterNoteElementPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ensah.controller.professeur.AjouterNoteElementController">
+	<children>
+		<Label layoutX="95.0" layoutY="15.0" text="Nom etudiant   :" />
+		<Label layoutX="300.0" layoutY="12.0" text="prenom etudiant :" />
+		<Label layoutX="31.0" layoutY="84.0" text="Note Ds" />
+		<Label layoutX="28.0" layoutY="128.0" text="Note Exam" />
+		<Label layoutX="30.0" layoutY="168.0" text="Note tp" />
+		<Label layoutX="28.0" layoutY="217.0" text="Note projet" />
+		<Label layoutX="28.0" layoutY="256.0" text="Note absence" />
+		<Label layoutX="31.0" layoutY="297.0" text="note Dl" />
+		<Label layoutX="28.0" layoutY="332.0" text="Note Expose" />
+		<TextField fx:id="DS" layoutX="115.0" layoutY="80.0" />
+		<TextField fx:id="Exam" layoutX="115.0" layoutY="124.0" />
+		<TextField fx:id="Tp" layoutX="115.0" layoutY="173.0" />
+		<TextField fx:id="Projet" layoutX="115.0" layoutY="217.0" />
+		<TextField fx:id="Absence" layoutX="115.0" layoutY="252.0" />
+		<TextField fx:id="DL" layoutX="115.0" layoutY="293.0" />
+		<TextField fx:id="Expose" layoutX="115.0" layoutY="337.0" />
+		<Button fx:id="validerBtn" layoutX="490.0" layoutY="350.0" mnemonicParsing="false" onAction="#valider" text="Valider" />
+		<Label fx:id="nomEtudiant" layoutX="215.0" layoutY="15.0" text="Label" />
+		<Label fx:id="prenomEtudiant" layoutX="433.0" layoutY="15.0" text="Label" />
+	</children>
+</AnchorPane>

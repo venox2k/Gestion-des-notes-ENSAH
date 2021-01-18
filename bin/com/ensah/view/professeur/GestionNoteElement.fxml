@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gestionNoteElementPane"
+	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.ensah.controller.professeur.GestionNoteElementController">
+	<children>
+		<BorderPane fx:id="gestionNoteElementBorder"
+			layoutX="176.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<top>
+				<Pane prefHeight="80.0" prefWidth="900.0"
+					BorderPane.alignment="CENTER">
+					<children>
+						<Label layoutX="77.0" layoutY="27.0"
+							text="Gestion Note Etudiant">
+							<font>
+								<Font name="System Bold" size="18.0" />
+							</font>
+						</Label>
+						<Button fx:id="ajouterNoteBtn" layoutX="701.0"
+							layoutY="28.0" mnemonicParsing="false" onAction="#ajouterNote"
+							prefHeight="25.0" prefWidth="138.0" text="Ajouter Note" />
+					</children>
+				</Pane>
+			</top>
+			<center>
+				<Pane prefHeight="412.0" prefWidth="700.0">
+					<children>
+						<ScrollPane prefHeight="409.0" prefWidth="900.0">
+							<content>
+								<TableView fx:id="etudiantTableView"
+									prefHeight="510.0" prefWidth="3000.0">
+									<columns>
+
+										<TableColumn fx:id="idEtudiantColumn"
+											prefWidth="146.4000015258789" text="Prenom Etudiant" />
+										<TableColumn fx:id="noteDsColumn"
+											prefWidth="78.39996337890625" text="Note Ds" />
+										<TableColumn fx:id="noteExamColumn"
+											prefWidth="83.60003662109375" text="Note Exam" />
+										<TableColumn fx:id="noteTpColumn"
+											prefWidth="73.5999755859375" text="Note Tp" />
+										<TableColumn fx:id="noteProjetColumn"
+											prefWidth="84.80001831054688" text="Note Projet" />
+										<TableColumn fx:id="noteExposeColumn"
+											prefWidth="89.60003662109375" text="Note Expose" />
+										<TableColumn fx:id="noteDevoirLibreColumn"
+											prefWidth="113.199951171875" text="Note Devoir Liblre" />
+										<TableColumn fx:id="seanceAbsenceColumn"
+											prefWidth="114.0" text="Seance Absence" />
+										<TableColumn fx:id="noteElementColumn"
+											prefWidth="75.0" text="Note Element" />
+									</columns>
+								</TableView>
+							</content>
+						</ScrollPane>
+					</children>
+				</Pane>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>

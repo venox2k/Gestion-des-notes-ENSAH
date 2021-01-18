@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="administrateurDashboard"
+	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.ensah.controller.administrateur.AdministrateurController">
+	<children>
+		<BorderPane fx:id="borderPaneAdministrateur"
+			prefHeight="594.0" prefWidth="892.0" AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<left>
+				<VBox alignment="TOP_CENTER" prefHeight="536.0"
+					prefWidth="225.0" spacing="15.0"
+					style="-fx-background-color: #3778C2; -fx-background-radius: 0 60 0 0;"
+					BorderPane.alignment="CENTER">
+					<children>
+						<Pane prefHeight="94.0" prefWidth="225.0">
+							<children>
+								<Button fx:id="administrateurBtn" alignment="CENTER"
+									layoutX="39.0" layoutY="26.0" mnemonicParsing="false"
+									onAction="#administrateur" prefHeight="35.0" prefWidth="150.0"
+									style="-fx-background-color: #fff; -fx-background-radius: 20 20 0 20;"
+									text="Administrateur" textFill="#3778c2">
+									<font>
+										<Font name="System Bold" size="16.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Button fx:id="gestionUtilisateurBtn"
+							alignment="BASELINE_LEFT" mnemonicParsing="false"
+							onAction="#gestionUtilisateur" prefHeight="35.0"
+							prefWidth="150.0" style="-fx-background-color: transparent;"
+							text="Gestion de utilisateurs" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionProfesseurBtn"
+							alignment="BASELINE_LEFT" mnemonicParsing="false"
+							onAction="#gestionProfesseur" prefHeight="35.0" prefWidth="150.0"
+							style="-fx-background-color: transparent;"
+							text="Gestion de professeurs" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionModuleBtn" alignment="BASELINE_LEFT"
+							mnemonicParsing="false" onAction="#gestionModule"
+							prefHeight="35.0" prefWidth="150.0"
+							style="-fx-background-color: transparent;"
+							text="Gestion de modules" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionElementBtn" alignment="BASELINE_LEFT"
+							mnemonicParsing="false" onAction="#gestionElement"
+							prefHeight="35.0" prefWidth="150.0"
+							style="-fx-background-color: transparent;"
+							text="Gestion de elements" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionClasseBtn" alignment="BASELINE_LEFT"
+							mnemonicParsing="false" onAction="#gestionClasse"
+							prefHeight="35.0" prefWidth="150.0"
+							style="-fx-background-color: transparent;"
+							text="Gestion de classes" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionEtudiantBtn"
+							alignment="BASELINE_LEFT" mnemonicParsing="false"
+							onAction="#gestionEtudiant" prefHeight="35.0" prefWidth="150.0"
+							style="-fx-background-color: transparent;"
+							text="Gestion de etudiants" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionDepartementBtn"
+							alignment="BASELINE_LEFT" mnemonicParsing="false"
+							onAction="#gestionDepartement" prefHeight="35.0"
+							prefWidth="150.0" style="-fx-background-color: transparent;"
+							text="Gestion de departements" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="gestionFiliereBtn" alignment="BASELINE_LEFT"
+							mnemonicParsing="false" onAction="#gestionFiliere"
+							prefHeight="35.0" prefWidth="150.0"
+							style="-fx-background-color: transparent;"
+							text="Gestion de filieres" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+					</children>
+				</VBox>
+			</left>
+			<top>
+				<HBox prefHeight="60.0" prefWidth="900.0"
+					BorderPane.alignment="CENTER">
+					<children>
+						<Pane prefHeight="60.0" prefWidth="225.0">
+							<children>
+								<Text fill="#3778c2" layoutX="60.0" layoutY="39.0"
+									strokeType="OUTSIDE" strokeWidth="0.0" text="ENSAH"
+									textAlignment="CENTER" wrappingWidth="104.39612579345703">
+									<font>
+										<Font name="Gill Sans MT Ext Condensed Bold" size="24.0" />
+									</font>
+								</Text>
+							</children>
+						</Pane>
+					</children>
+				</HBox>
+			</top>
+		</BorderPane>
+	</children>
+</AnchorPane>

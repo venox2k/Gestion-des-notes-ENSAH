@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ensah.controller.AuthentifiactionController">
+	<children>
+		<BorderPane prefHeight="480.0" prefWidth="824.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<left>
+				<Pane prefHeight="600.0" prefWidth="259.0" style="-fx-background-color: #0496FF; -fx-background-radius: 0 60 0 0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="6.0" layoutY="569.0" text="Copyright © 2020 Tous les droits sont réservés" textFill="#29166f">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../t1.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+			</left>
+			<center>
+				<Pane prefHeight="502.0" prefWidth="502.0" BorderPane.alignment="CENTER">
+					<children>
+						<TextField fx:id="nomUtilisateur" layoutX="94.0" layoutY="248.0" prefHeight="50.0" prefWidth="400.0" promptText="Nom d'utilisateur" />
+						<TextField fx:id="motDePasseUtilisateur" layoutX="94.0" layoutY="329.0" prefHeight="50.0" prefWidth="400.0" promptText="Mot de passe" />
+						<Button fx:id="authentifier" layoutX="344.0" layoutY="411.0" mnemonicParsing="false" onAction="#authentification" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #0496FF;" text="S'authentifier" textFill="WHITE" />
+						<Label layoutX="94.0" layoutY="135.0" prefHeight="53.0" prefWidth="331.0" text="Authentification">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</Label>
+                  <Label fx:id="authentification_errone" layoutX="94.0" layoutY="212.0" style="visibility: hidden;" text="Votre Nom d'utilisateur ou mot de passe est incorrect" textFill="RED">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+					</children>
+				</Pane>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>

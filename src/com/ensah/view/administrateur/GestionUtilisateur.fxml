@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gestionUtilisateurPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ensah.controller.administrateur.GestionUtilisateurController">
+	<children>
+		<BorderPane fx:id="gestionUtilisateurBorder" layoutX="150.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<top>
+				<Pane prefHeight="50.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+					<children>
+						<Label layoutX="54.0" layoutY="12.0" prefHeight="27.0" prefWidth="204.0" text="Gestion des utilisateurs" textFill="#0f2557">
+							<font>
+								<Font name="System Bold" size="18.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+			</top>
+			<center>
+				<VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+					<children>
+						<Pane prefHeight="140.0" prefWidth="700.0">
+							<children>
+								<HBox prefHeight="141.0" prefWidth="900.0" spacing="10.0">
+									<children>
+										<Pane onMousePressed="#ajouterUtilisateur" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0F2557; -fx-background-radius: 5 35 5 5;">
+											<children>
+												<Label layoutX="21.0" layoutY="80.0" text="Ajouter Utilisateur" textFill="WHITE">
+													<font>
+														<Font name="System Bold" size="18.0" />
+													</font>
+												</Label>
+											</children>
+										</Pane>
+										<Pane onMousePressed="#modifierUtilisateur" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0F2557; -fx-background-radius: 5 35 5 5;">
+											<children>
+												<Label layoutX="16.0" layoutY="80.0" text="Modifier Utilisateur" textFill="WHITE">
+													<font>
+														<Font name="System Bold" size="18.0" />
+													</font>
+												</Label>
+											</children>
+										</Pane>
+										<Pane onMousePressed="#supprimerUtilisateur" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0F2557; -fx-background-radius: 5 35 5 5;">
+											<children>
+												<Label layoutX="9.0" layoutY="80.0" text="Supprimer Utilisateur" textFill="WHITE">
+													<font>
+														<Font name="System Bold" size="18.0" />
+													</font>
+												</Label>
+											</children>
+										</Pane>
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</HBox>
+							</children>
+						</Pane>
+						<Pane prefHeight="412.0" prefWidth="700.0">
+							<children>
+								<ScrollPane prefHeight="409.0" prefWidth="900.0">
+									<content>
+										<TableView fx:id="utilisateurTableView" prefHeight="396.0" prefWidth="899.0" BorderPane.alignment="CENTER">
+											<columns>
+												<TableColumn fx:id="idUtilisateurColumn" prefWidth="240.0000343322754" text="ID Utilisateur " />
+												<TableColumn fx:id="nomUtilisateurColumn" prefWidth="159.59996032714844" text="Nom Utilisateur" />
+												<TableColumn fx:id="motDePasseUtilisateurColumn" prefWidth="194.79998779296875" text="Mot de Passe Utilisateur" />
+												<TableColumn fx:id="cleUtilisateurColumn" prefWidth="238.4000244140625" text="Cle Utilisateur" />
+											</columns>
+										</TableView>
+									</content>
+								</ScrollPane>
+							</children>
+						</Pane>
+					</children>
+				</VBox>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>

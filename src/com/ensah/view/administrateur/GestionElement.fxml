@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gestionElementPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ensah.controller.administrateur.GestionElementController">
+	<children>
+		<BorderPane fx:id="gestionElementBorder" layoutX="150.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<top>
+				<Pane prefHeight="50.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+					<children>
+						<Label layoutX="54.0" layoutY="12.0" prefHeight="27.0" prefWidth="204.0" text="Gestion des Elements" textFill="#0f2557">
+							<font>
+								<Font name="System Bold" size="18.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+			</top>
+			<center>
+				<VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+					<children>
+						<Pane prefHeight="140.0" prefWidth="700.0">
+							<children>
+								<HBox prefHeight="141.0" prefWidth="900.0" spacing="10.0">
+									<children>
+										<Pane onMousePressed="#ajouterElement" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0F2557; -fx-background-radius: 5 35 5 5;">
+											<children>
+												<Label layoutX="21.0" layoutY="80.0" text="Ajouter Element" textFill="WHITE">
+													<font>
+														<Font name="System Bold" size="18.0" />
+													</font>
+												</Label>
+											</children>
+										</Pane>
+										<Pane onMousePressed="#modifierElement" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0F2557; -fx-background-radius: 5 35 5 5;">
+											<children>
+												<Label layoutX="25.0" layoutY="80.0" text="Modifier Element" textFill="WHITE">
+													<font>
+														<Font name="System Bold" size="18.0" />
+													</font>
+												</Label>
+											</children>
+										</Pane>
+										<Pane onMousePressed="#supprimerElement" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0F2557; -fx-background-radius: 5 35 5 5;">
+											<children>
+												<Label layoutX="19.0" layoutY="80.0" text="Supprimer Element" textFill="WHITE">
+													<font>
+														<Font name="System Bold" size="18.0" />
+													</font>
+												</Label>
+											</children>
+										</Pane>
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</HBox>
+							</children>
+						</Pane>
+						<Pane prefHeight="412.0" prefWidth="700.0">
+							<children>
+								<ScrollPane prefHeight="409.0" prefWidth="900.0">
+									<content>
+										<TableView fx:id="elementTableView" prefHeight="510.0" prefWidth="3000.0">
+											<columns>
+												<TableColumn fx:id="idElementColumn" prefWidth="150.0" text="ID Element" />
+												<TableColumn fx:id="designationElementColumn" prefWidth="150.0" text="Designation Element" />
+												<TableColumn fx:id="coefficientElementColumn" prefWidth="150.0" text="Coefficient Element" />
+												<TableColumn fx:id="dsActiveColumn" prefWidth="150.0" text="Ds Active" />
+												<TableColumn fx:id="examActiveColumn" prefWidth="150.0" text="Exam Active" />
+												<TableColumn fx:id="tpActiveColumn" prefWidth="150.0" text="Tp Active" />
+												<TableColumn fx:id="projetActiveColumn" prefWidth="150.0" text="Projet Active" />
+												<TableColumn fx:id="exposeActiveColumn" prefWidth="150.0" text="Expose Active" />
+												<TableColumn fx:id="devoirLibreActiveColumn" prefWidth="150.0" text="Devoir Libre Active" />
+												<TableColumn fx:id="absenceActiveColumn" prefWidth="150.0" text="Absence Active" />
+												<TableColumn fx:id="coefficientDsColumn" prefWidth="150.0" text="Coefficient Ds" />
+												<TableColumn fx:id="coefficientExamColumn" prefWidth="150.0" text="Coefficient Exam" />
+												<TableColumn fx:id="coefficientTpColumn" prefWidth="150.0" text="Coefficient Tp" />
+												<TableColumn fx:id="coefficientProjetColumn" prefWidth="150.0" text="Coefficient Projet" />
+												<TableColumn fx:id="coefficientExposeColumn" prefWidth="150.0" text="Coefficient Expose" />
+												<TableColumn fx:id="coefficientDevoirLibreColumn" prefWidth="150.0" text="Coefficient Devoir Libre" />
+												<TableColumn fx:id="coefficientAbsenceColumn" prefWidth="150.0" text="Coefficient Absence" />
+												<TableColumn fx:id="moduleIdColumn" prefWidth="75.0" text="Module ID" />
+												<TableColumn fx:id="professeurIdColumn" prefWidth="75.0" text="Professeur ID" />
+											</columns>
+										</TableView>
+									</content>
+								</ScrollPane>
+							</children>
+						</Pane>
+					</children>
+				</VBox>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>
